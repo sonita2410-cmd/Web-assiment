@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | THE GEN COLLECTION</title>
+
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="NAVBAR">
+        <div class="menu">
+            <a href="index.html">← BACK</a>
+        </div>
+
+        <div class="logo">
+            <h1>THE GEN COLLECTION</h1>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Search products...">
+
+                <button id="searchBtn" type="button">
+                    SEARCH
+                </button>
+            </div>
+
+            <a href="login.html">LOGIN</a>
+
+            <a href="cart.html">
+                CART 🛒 <span id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+
+        <h2>MENU</h2>
+
+        <a href="index.html">Home</a>
+        <a href="products.html">Women</a>
+        <a href="products.html">Men</a>
+        <a href="products.html">Accessories</a>
+        <a href="products.html">Shoes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+
+    </aside>
+
+    <!-- PRODUCTS PAGE -->
+    <main class="products-page">
+
+        <div class="products-header">
+            <p>THE GEN COLLECTION</p>
+            <h2>OUR PRODUCTS</h2>
+            <p>Discover modern fashion made for your style.</p>
+        </div>
+
+
+        <!-- WOMEN'S CLOTHING -->
+        <section class="product-section">
+
+            <div class="section-title">
+                <p>FOR HER</p>
+                <h2>WOMEN'S CLOTHING</h2>
+            </div>
+
+            <div class="products-grid">
+
+
+                <!-- Women Product 1 -->
+                <article class="shop-product">
+
+                    <div class="shop-product-image">
+                        <img src="image/Products/girl3.jpg" alt="Women's Oversized Hoodie">
+                    </div>
+
+                    <div class="shop-product-info">
+                        <h3>Women's Oversized Hoodie</h3>
+                        <p>Comfort Collection</p>
+                        <strong>$25.00</strong>
+
+                        <button class="add-cart-btn" onclick="addToCart(
+                            'Women Oversized Hoodie',
+                            25,
+                            'image/Products/girl3.jpg'
+                        )">
+                            ADD TO CART
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- Women Product 2 -->
+                <article class="shop-product">
+
+                    <div class="shop-product-image">
+                        <img src="image/Products/girl2.jpg" alt="Women's Hoodie">
+                    </div>
+
+                    <div class="shop-product-info">
+                        <h3>Women's Oversized Hoodie</h3>
+                        <p>Comfort Collection</p>
+                        <strong>$30.00</strong>
+
+                        <button class="add-cart-btn" onclick="addToCart(
+                            'Women Oversized Hoodie',
+                            30,
+                            'image/Products/girl2.jpg'
+                        )">
+                            ADD TO CART
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- Women Product 3 -->
+                <article class="shop-product">
+
+                    <div class="shop-product-image">
+                        <img src="image/Products/girl4.jpg" alt="Women's Jeans with Crop Top">
+                    </div>
+
+                    <div class="shop-product-info">
+                        <h3>Women's Straight Jeans with Crop Top</h3>
+                        <p>Everyday Style</p>
+                        <strong>$25.00</strong>
+
+                        <button class="add-cart-btn" onclick="addToCart(
+                            'Women Straight Jeans with Crop Top',
+                            25,
+                            'image/Products/girl4.jpg'
+                        )">
+                            ADD TO CART
+                        </button>
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+    <!-- MEN -->
+    <section class="product-section">
+
+        <div class="section-title">
+            <p>FOR HIM</p>
+            <h2>MEN'S CLOTHING</h2>
+        </div>
+
+
+        <div class="products-grid">
+
+            <!-- Men Product 1 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <span class="product-label">NEW</span>
+
+                    <img src="image/Products/boy3.jpg" alt="Men's Outfit">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Classic Men's Outfit</h3>
+
+                    <p>Everyday Essential</p>
+
+                    <strong>$25.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart('Classic Men\'s T-Shirt',25,'image/tshirt.png')">
+                        Add to Cart
+                    </button>
+                    ('image/Products/boy3.jpg') ">
+                    ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Men Product 2 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Products/boy2.jpg" alt="Men's Outfit">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Men's Essential Outfit</h3>
+
+                    <p>Street Style</p>
+
+                    <strong>$30.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Men Essential Outfit',
+                                30,
+                                'image/Products/boy2.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- Men Product 3 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Products/boy4.jpg" alt="Men's Simple">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Men's Simple Outfit</h3>
+
+                    <p>Classic Collection</p>
+
+                    <strong>$25.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Men Simple Outfit',
+                                25,
+                                'image/Products/boy4.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ACCESSORIES -->
+    <section class="product-section">
+
+        <div class="section-title">
+            <p>COMPLETE YOUR LOOK</p>
+            <h2>ACCESSORIES</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Accessory 1 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Acc/bag1.jpg" alt="Fashion Bag">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Minimalist Shoulder Bag</h3>
+
+                    <p>Everyday Accessory</p>
+
+                    <strong>$10.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Minimalist Shoulder Bag',
+                                10,
+                                'image/Acc/bag1.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Accessory 2 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Acc/cap.jpg" alt="Fashion Cap">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Classic Fashion Cap</h3>
+
+                    <p>Modern Essential</p>
+
+                    <strong>$5.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Classic Fashion Cap',
+                                5,
+                                'image/Acc/cap.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Accessory 3 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Acc/sunglassic.jpg" alt="Fashion Sunglasses">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Modern Sunglasses</h3>
+
+                    <p>Style Essential</p>
+
+                    <strong>$15.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Modern Sunglasses',
+                                15,
+                                'image/Acc/sunglassic.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- SHOES -->
+    <section class="product-section">
+
+        <div class="section-title">
+            <p>STEP INTO STYLE</p>
+            <h2>SHOES</h2>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Shoes 1 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <span class="product-label">NEW</span>
+
+                    <img src="image/Acc/shoes1.jpg" alt="White Sneakers">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Classic White Sneakers</h3>
+
+                    <p>Everyday Shoes</p>
+
+                    <strong>$55.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Classic White Sneakers',
+                                55,
+                                'image/Acc/shoes1.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- Shoes 2 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Acc/shoes2.jpg" alt="Casual Sneakers">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Casual Street Sneakers</h3>
+
+                    <p>Street Collection</p>
+
+                    <strong>$60.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Casual Street Sneakers',
+                                60,
+                                'image/Acc/shoes2.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- Shoes 3 -->
+            <article class="shop-product">
+
+                <div class="shop-product-image">
+
+                    <img src="image/Acc/heel.jpg" alt="Fashion heel">
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Modern Fashion heel</h3>
+
+                    <p>Premium Style</p>
+
+                    <strong>$65.00</strong>
+
+                    <button class="add-cart-btn" onclick="addToCart(
+                                'Modern Fashion heel',
+                                65,
+                                'image/Acc/heel.jpg'
+                            )">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>THE GEN COLLECTION</h2>
+
+                <p>Your style, your confidence.</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>QUICK LINKS</h3>
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>CATEGORIES</h3>
+
+                <a href="products.html">Women</a>
+                <a href="products.html">Men</a>
+                <a href="products.html">Accessories</a>
+                <a href="products.html">Shoes</a>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>CONTACT US</h3>
+
+                <p>📧 thegencollection@gmail.com</p>
+                <p>📞 +855 12 345 678</p>
+                <p>📍 Phnom Penh, Cambodia</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 The Gen Collection.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="All.js"></script>
+
+</body>
+
+</html>

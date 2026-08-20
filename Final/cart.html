@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | THE GEN COLLECTION</title>
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+         <div class="logo">
+            <a href="index.html">←  THE GEN COLLECTION</a>
+        </div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="index.html#products">PRODUCTS</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#contact">CONTACT</a>
+            <a href="login.html">LOGIN</a>
+            <a href="cart.html" class="cart-link">
+                CART 🛒
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- CART SECTION -->
+    <main class="cart-page">
+
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-container">
+
+            <!-- PRODUCTS WILL APPEAR HERE -->
+            <div id="cartItems">
+
+                <div class="empty-cart">
+                    <h2>Your cart is empty</h2>
+                    <p>Add some products to your cart.</p>
+
+                    <a href="index.html" class="shop-btn">
+                        Continue Shopping
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- CART SUMMARY -->
+            <div class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+
+                <button class="checkout-btn" onclick="checkout()">
+                    Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="All.js"></script>
+
+</body>
+</html>
